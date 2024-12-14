@@ -29,6 +29,8 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/twentytwenty.css">
+
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
@@ -133,11 +135,65 @@
   </div>
 </section>
 
+<script>
+  $(window).on('load', function () {
+      bulmaCarousel.attach('#results-carousel-horizontal', {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          loop: true,
+          autoplay: false,
+      });
+
+      bulmaCarousel.attach('#results-carousel-vertical', {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          loop: true,
+          autoplay: false,
+      });
+
+  });
+</script>
+
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <video id="teaser-video" autoplay controls muted loop playsinline width="100%">
-      <source src="./static/videos/supp.mp4"
-              type="video/mp4">
+    <h2 class="title is-4" style="text-align: center;">Accurate and multi-view consistent intrinsic decomposition</h2>
+
+    <div class="container">
+
+      <div id="results-carousel-horizontal" class="carousel results-carousel">
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+            <source src="./static/videos/vi_p1.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+            <source src="./static/videos/vi_p2.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+            <source src="./static/videos/vi_p3.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+            <source src="./static/videos/vi_p4.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+            <source src="./static/videos/vi_p5.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+          <source src="./static/videos/vi_p6.mp4" type="video/mp4">
+        </video>
+
+        <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+          <source src="./static/videos/vi_p7.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+    </div>
+
   </div>
 </section>
 
